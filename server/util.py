@@ -2,6 +2,7 @@ import json
 import pickle
 import numpy as np
 import warnings
+import os
 
 warnings.filterwarnings("ignore", category=FutureWarning, module="sklearn")
 
@@ -35,12 +36,15 @@ def load_saved_artifacts():
     global __data_columns
     global __locations
 
-    with open("D:/projects/Real Estate Price Prediction/server/artifacts/columns.json", 'r') as f:
+    file_path = os.path.join(os.path.dirname(__file__), 'artifacts', 'columns.json')
+    file_path2 = os.path.join(os.path.dirname(__file__), 'artifacts', 'banglore_home_prices_model.pickle')
+
+    with open(file_path, 'r') as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]
 
     global __model
-    with open("D:/projects/Real Estate Price Prediction/server/artifacts/banglore_home_prices_model.pickle", 'rb') as f:
+    with open(file_path2, 'rb') as f:
         __model = pickle.load(f)
 
     print("loading saved artifacts...done")
