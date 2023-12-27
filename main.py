@@ -13,9 +13,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 app = FastAPI()
 
-@app.get("/health")
-def read_health():
-    return {"status": "OK"}
+
 
 util.load_saved_artifacts()
 
@@ -67,9 +65,6 @@ async def predict_home_price(data: PredictionRequest):
 
 if __name__ == "__main__":
     print("Starting FastAPI Server for Home Price Prediction...")
-    import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8000)
     # util.load_saved_artifacts()
     # locations = util.get_location_name()
     # print(locations)
