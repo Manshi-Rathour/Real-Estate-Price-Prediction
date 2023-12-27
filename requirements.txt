@@ -5,8 +5,6 @@ python-multipart==0.0.5
 pydantic==2.3.0
 pydantic-extra-types==2.2.0
 pydantic-settings==2.1.0
-<<<<<<< HEAD
 uvicorn
-=======
 
->>>>>>> 05f2f111b9811c344e33e4f1c461c23f39c9be91
+
