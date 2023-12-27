@@ -13,6 +13,10 @@ warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 app = FastAPI()
 
+@app.get("/health")
+def read_health():
+    return {"status": "OK"}
+
 util.load_saved_artifacts()
 
 # Mount a static directory for serving CSS and JavaScript files
