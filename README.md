@@ -2,6 +2,4 @@
 
 <h3>Vist link</h3>
 
-https://realestatepriceprediction.azurewebsites.net/
-
 https://real-estate-obz5.onrender.com
