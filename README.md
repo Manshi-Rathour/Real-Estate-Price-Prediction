@@ -2,4 +2,4 @@
 
 <h3>Vist link</h3>
 
-https://real-estate-obz5.onrender.com
+https://real-estate-price-prediction-6zm24tm3wq-em.a.run.app/
