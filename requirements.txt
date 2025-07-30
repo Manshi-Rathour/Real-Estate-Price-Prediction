@@ -2,11 +2,11 @@ fastapi[all]
 numpy
 scikit-learn
 
-jinja2==3.0.2
-python-multipart==0.0.5
-pydantic==2.3.0
-pydantic-extra-types==2.2.0
-pydantic-settings==2.1.0
+jinja2
+python-multipart
+pydantic
+pydantic-extra-types
+pydantic-settings
 uvicorn
 
 
