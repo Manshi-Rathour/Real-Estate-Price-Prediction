@@ -56,7 +56,7 @@ A machine learning-powered web application that estimates residential property p
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/real-estate-price-prediction.git
+git clone https://github.com/Manshi-Rathour/Real-Estate-Price-Prediction.git
 cd real-estate-price-prediction
 ```
 
