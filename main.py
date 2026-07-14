@@ -5,7 +5,6 @@ from server import util
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse
 import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
@@ -24,7 +23,7 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html")
 
 
 class LocationResponse(BaseModel):
