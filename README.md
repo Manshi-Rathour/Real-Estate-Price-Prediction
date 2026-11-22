@@ -130,4 +130,4 @@ The model uses **Linear Regression** trained on Bangalore housing data. Features
 
 The app is configured for deployment on Render (or any container platform). A live demo is available at:
 
-[http://housepriceapi.duckdns.org/](http://housepriceapi.duckdns.org/)
+[https://real-estate-obz5.onrender.com/](https://real-estate-obz5.onrender.com/)
